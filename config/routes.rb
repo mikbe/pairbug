@@ -1,4 +1,6 @@
 Pairbug::Application.routes.draw do
+  resources :interests
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
