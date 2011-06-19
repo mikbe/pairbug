@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe "interests/show.html.haml" do
+describe "signups/show.html.haml" do
   before(:each) do
-    @interest = assign(:interest, stub_model(Interest,
+    @signup = assign(:signup, stub_model(Signup,
       :ip => "Ip"
     ))
   end

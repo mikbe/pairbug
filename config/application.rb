@@ -43,5 +43,13 @@ module Pairbug
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    
+        # Add this for Spork 
+    if Rails.env.test? 
+      initializer :after => :initialize_dependency_mechanism do 
+        ActiveSupport::Dependencies.mechanism = :load 
+      end 
+    end
+    
   end
 end

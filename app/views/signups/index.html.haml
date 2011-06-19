@@ -1,0 +1,10 @@
+.title pairBUG
+.subtitle pair coding for the lone programmer
+
+= form_tag(signups_path, :method => "post") do
+  = submit_tag("sign up now", :class => "button")
+
+.feedback
+  - if notice
+    - notice.each do |note|
+      #notice= note
